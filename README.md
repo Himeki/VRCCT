@@ -1,5 +1,5 @@
 # VRCCT
-VRChat Cache Tool
+VRChat Cache Tool For Windows
 A quick and easy way to clear your VRChat cache, and make or remove symbolic links.
 
 
