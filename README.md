@@ -13,7 +13,7 @@ Usage Instructions:
 
   2.) Put it somewhere you want to use it from
 
-  3.) Run it
+  3.) Run it as administrator
 
   4.) Tell me if there are any issues (there shouldn't be...but you know)
 
