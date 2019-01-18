@@ -5,7 +5,7 @@ echo Tool Start>"VRCCT-log.txt"
 cls
 
 echo Report any issues related to this script to Himeki#2865 on Discord. Please include the "VRCCT-log.txt" from the file location. The log re-generates on each run and will stay small.
-echo If you did not download this script from "https://www.dropbox.com/s/qm3q3rsq2hr55fa/VRChat_Cache_Tool.bat" then cease execution of this script immediately^^! The validity of the script cannot be assured.
+echo If you did not download this script from "https://github.com/Himeki/VRCCT/releases" then cease execution of this script immediately^^! The validity of the script cannot be assured.
 echo.
 echo Description of script:
 echo This script will give you options to delete the cache as well as make or remove symbolic links to place the cache on another drive or location. It will also create an INI file to log the current location of the cache for future runs.
@@ -47,6 +47,7 @@ set "TestMode=0"
 echo. >>"VRCCT-log.txt"
 echo Main Logging Start >>"VRCCT-log.txt"
 echo TestMode: !TestMode! >>"VRCCT-log.txt"
+echo Version: 2.0 >>"VRCCT-log.txt"
 cls
 
 :CacheLocFileCheck
@@ -495,10 +496,13 @@ echo DelCache Start >>"VRCCT-log.txt"
 echo. >>"VRCCT-log.txt"
 echo del path1:"!CacheLoc!\vrchat\HTTPCache" >>"VRCCT-log.txt"
 echo del path2:"!CacheLoc!\vrchat\VRCHTTPCache" >>"VRCCT-log.txt"
+echo del path2:"!CacheLoc!\vrchat\HTTPCache-WindowsPlayer" >>"VRCCT-log.txt"
 timeout /NOBREAK /t 1 >nul 2>nul
 del /f /s /q "!CacheLoc!\vrchat\HTTPCache" 2>>"VRCCT-log.txt"
 timeout /NOBREAK /t 1 >nul 2>nul
 del /f /s /q "!CacheLoc!\vrchat\VRCHTTPCache" 2>>"VRCCT-log.txt"
+timeout /NOBREAK /t 1 >nul 2>nul
+del /f /s /q "!CacheLoc!\vrchat\HTTPCache-WindowsPlayer" 2>>"VRCCT-log.txt"
 )
 
 echo.
